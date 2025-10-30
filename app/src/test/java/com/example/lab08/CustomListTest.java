@@ -17,7 +17,7 @@ public class CustomListTest {
         City calgary = new City("Calgary", "AB");
         list.addCity(calgary);
         // This will fail initially because deleteCity() and getSize() don't exist
-        list.deleteCity(calgary);
+        assertTrue(list.deleteCity(calgary));
         assertEquals(0, list.getSize());
     }
 }
