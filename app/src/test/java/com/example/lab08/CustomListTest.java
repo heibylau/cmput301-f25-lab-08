@@ -21,4 +21,14 @@ public class CustomListTest {
         assertEquals(0, list.getSize());
     }
 
+    @Test
+    public void testCountCity() {
+        CustomList list = new CustomList();
+        City calgary = new City("Calgary", "AB");
+        City edmonton = new City("Edmonton", "AB");
+        list.addCity(calgary);
+        list.addCity(edmonton);
+        // This will fail initially because countCity() doesn't exist
+        assertEquals(2, list.countCity());
+    }
 }
