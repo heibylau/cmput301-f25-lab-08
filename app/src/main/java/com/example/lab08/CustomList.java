@@ -14,10 +14,6 @@ public class CustomList {
         cities.add(city);
     }
 
-    public int getSize() {
-        return cities.size();
-    }
-
     public boolean hasCity(City city) {
         return cities.contains(city);
     }
@@ -32,5 +28,9 @@ public class CustomList {
             }
         }
         return false;
+    }
+
+    public int countCity() {
+        return cities.size();
     }
 }
