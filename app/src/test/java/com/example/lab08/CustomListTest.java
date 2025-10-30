@@ -20,4 +20,5 @@ public class CustomListTest {
         assertTrue(list.deleteCity(calgary));
         assertEquals(0, list.getSize());
     }
+
 }

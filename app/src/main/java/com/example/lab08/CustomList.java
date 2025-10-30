@@ -25,7 +25,7 @@ public class CustomList {
     public boolean deleteCity(City city) {
         for (int i = 0; i < cities.size(); i++) {
             String cityName = cities.get(i).getCityName();
-            String provinceName = cities.get(i).getCityName();
+            String provinceName = cities.get(i).getProvinceName();
             if (cityName.equals(city.getCityName()) && provinceName.equals(city.getProvinceName())) {
                 cities.remove(i);
                 return true;
